@@ -1,0 +1,391 @@
+@import './default';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FFF;
+
+  // form 上边距设置20px
+  .ant-spin-container {
+    .ant-form {
+      margin-top: 20px;
+    }
+  }
+}
+
+#vite-app {
+  width: 100%;
+  height: 100%;
+
+  .ant-layout {
+    background-color: #FFF;
+  }
+}
+
+
+
+.ant-popover .ant-popover-inner-content {
+  padding: 0;
+}
+
+.ant-drawer .ant-drawer-body {
+  padding: 0;
+}
+
+.d-content-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  background-color: #eff3f6; // 浏览器不支持线性时显示
+  background-image: linear-gradient(#FFF, #eff3f6);
+}
+
+.d-full {
+  width: 100%;
+  height: 100%;
+}
+
+// 表格居中
+.d-table-center-container {
+
+  .ant-table-content tr {
+    th {
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    td {
+      text-align: center;
+    }
+  }
+
+  .ant-table table {
+    background: #fff;
+
+    .ant-table-thead th {
+      position: sticky;
+      top: 0;
+      z-index: 99;
+    }
+  }
+
+  .d-table-mini .ant-table-container tr {
+    td {
+      padding: 5px;
+    }
+  }
+}
+
+// table row内容限制
+.d-table-row-nowrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+// 文字颜色
+.d-text-danger {
+  color: #ED1C27;
+}
+
+.d-text-warning {
+  color: #FF8C00;
+}
+
+.d-text-success {
+  color: #40CB09;
+}
+
+.d-text-gray {
+  color: #CCC;
+}
+
+.d-text-light-gray {
+  color: #F3F3F3;
+}
+
+.d-text-info {
+  color: #52B7FF;
+}
+
+.d-text-default {
+  color: #3F3F3F;
+}
+
+.d-text-primary {
+  color: #9D60FF;
+}
+
+.d-text-white {
+  color: #FFF;
+}
+
+.d-text-blue {
+  color: #42BDFF;
+}
+
+.d-edit {
+  color: rgba(0, 0, 0, .2);
+  cursor: pointer;
+
+  &:hover {
+    color: rgba(0, 0, 0, .9);
+  }
+}
+
+/* 描述列表（Antd） */
+.d-description {
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+
+  .ant-descriptions-item-label {
+    color: rgba(0, 0, 0, 0.45);
+  }
+
+  .ant-descriptions-item-content {
+    display: block;
+  }
+
+}
+
+.d-textalign-center {
+  text-align: center;
+}
+
+.d-textalign-right {
+  text-align: right;
+}
+
+// 背景
+.d-bg-danger {
+  background: #ED1C27;
+}
+
+.d-bg-warning {
+  background: #FF8C00;
+}
+
+.d-bg-success {
+  background: #40CB09;
+}
+
+.d-bg-gray {
+  background: #CCC;
+}
+
+.d-bg-info {
+  background: #52B7FF;
+}
+
+.d-bg-default {
+  background: #3F3F3F;
+}
+
+.d-bg-light-success {
+  background: rgba(45, 221, 113, .1);
+}
+
+.d-border-top {
+  border-top: 1px solid #F3F3F3;
+}
+
+.d-border-bottom {
+  border-bottom: 1px solid #F3F3F3;
+}
+
+.d-link {
+  cursor: pointer;
+  color: #2A79FF;
+
+  &:hover {
+    color: #5b92f1;
+  }
+}
+
+//激活变蓝
+.d-element-active_blue {
+  &:before {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    background-color: #0e80d2 !important;
+    width: 100%;
+    ;
+  }
+
+}
+
+.d-tag {
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 15px;
+  margin: 0 5px;
+}
+
+.d-tag-success {
+  border: 1px solid #40CB09;
+  color: #40CB09;
+}
+
+.d-margin-15-0 {
+  margin: 15px 0;
+}
+
+.d-padding-15 {
+  padding: 15px;
+}
+
+.d-padding-5 {
+  padding: 5px;
+}
+
+.d-padding-0-15 {
+  padding: 0 15px;
+}
+
+// 抽屉样式
+.d-drawer-container {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.d-drawer-content {
+  width: initial;
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.d-drawer-footer {
+  padding: 10px 15px;
+  border-top: 1px solid #f0f0f0;
+  background-color: #FFF;
+  text-align: right;
+
+  &-sticky {
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 9;
+  }
+}
+
+
+
+// 滚动条垂直方向的宽度
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track-piece {
+  /*背景样式*/
+  background-color: #FFF;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  /*垂直样式*/
+  height: 10px;
+  background-color: #D0D5D9;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  /*水平样式*/
+  height: 10px;
+  background-color: #D0D5D9;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+// 筛选条件
+.d-greeting {
+  padding: 10px 10px 0;
+  background-color: rgba(60, 74, 115, 0.05);
+  display: flex;
+  border-radius: 3px 3px 0 0;
+  font-size: 20px;
+  margin-bottom: 15px;
+  display: flex;
+
+  &-title {
+    font-size: 16px;
+    color: #999999;
+  }
+
+  /* 内容 */
+  &-content {
+    flex: 1;
+    position: relative;
+    z-index: 0;
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: url("http://docs.antjob.ink/tct/logo/en_zh-short-horizontal.png");
+      background-size: auto 40px;
+      filter: grayscale(100%) brightness(300%);
+      opacity: .4;
+    }
+
+    .ant-form-inline .ant-form-item {
+      margin-bottom: 10px;
+    }
+  }
+
+  &-operate {
+    text-align: right;
+  }
+
+}
+
+// 用例编辑
+.case-lib-update {
+  .ant-tabs-nav {
+    padding-left: 50px;
+  }
+}
+
+// tables sticky的滚动条位置调整
+.ant-table-sticky-scroll-bar {
+  position: relative;
+  bottom: 7px;
+}
+
+.ant-modal-confirm-content {
+  margin-left: 0px !important;
+}
+
+.ant-popover-arrow {
+  visibility: hidden !important;
+}
